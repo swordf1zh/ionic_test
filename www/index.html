@@ -46,18 +46,16 @@
             </p>
           </div>
 
-          <div class="item tabs tabs-secondary tabs-icon-left">
-            <span class="item item-checkbox">
-              <label class="checkbox">
-                <input type="checkbox" ng-model="task.completed" ng-click="completeTask($index)">
-              </label>
-            </span>
+          <div class="item tabs tabs-secondary tabs-icon-top">
+            <ion-checkbox class="tab-item" ng-model="task.completed">
+              Completado
+            </ion-checkbox>
             <a class="tab-item assertive" ng-click="removeTask($index)">
               <i class="icon ion-android-close"></i>
+              Eliminar
             </a>
           </div>
         </div>
-
       </ion-content>
 
     </ion-pane>
